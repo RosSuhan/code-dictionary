@@ -23,7 +23,7 @@ a.hover{
 }
 
 /* Header */
-header{
+.header{
     position: relative;
     padding: 0 2rem;
 }
@@ -38,17 +38,17 @@ header{
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.logoLink {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar .links {
+.links {
     display: flex;
     gap: 2rem;
 }
 
-.navbar .toggle_btn {
+.toggle_btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
@@ -128,12 +128,12 @@ section#hero{
 
 /*Responsive Design */
 @media(max-width: 992px){
-    .navbar .links,
-    .navbar .action_btn {
+    .links,
+    .action_btn {
         display: none;
     }
 
-    .navbar .toggle_btn{
+    .toggle_btn{
         display: block;
     }
 
