@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/imageSlider/imageSlider.css">
+    </head>
+    <div class="one-slide white">
+        <div class="testimonial w-100 h-100  p-3 text-center">
+          <div class="message text-center text-gray">I have been working with Solodev for nearly 4 years and I couldn't be happier with the results!</div>
+          <div class="separator">&nbsp;</div>
+          <div class="brand"><img alt="Slider Box Image" src="https://raw.githubusercontent.com/solodev/slider-boxes/master/images/img-1.png" class="mx-auto"/></div>
+        </div>
+    </div>
+    <div class="one-slide white">
+      <div class="testimonial w-100 h-100  p-3 text-center">
+        <div class="message text-center text-gray">I have been working with Solodev for nearly 4 years and I couldn't be happier with the results!</div>
+        <div class="separator">&nbsp;</div>
+        <div class="brand"><img alt="Slider Box Image" src="https://raw.githubusercontent.com/solodev/slider-boxes/master/images/img-1.png" class="mx-auto"/></div>
+      </div>
+  </div>
+  <div class="one-slide white">
+    <div class="testimonial w-100 h-100  p-3 text-center">
+      <div class="message text-center text-gray">I have been working with Solodev for nearly 4 years and I couldn't be happier with the results!</div>
+      <div class="separator">&nbsp;</div>
+      <div class="brand"><img alt="Slider Box Image" src="https://raw.githubusercontent.com/solodev/slider-boxes/master/images/img-1.png" class="mx-auto"/></div>
+    </div>
+</div>
+<div class="one-slide white">
+  <div class="testimonial w-100 h-100  p-3 text-center">
+    <div class="message text-center text-gray">I have been working with Solodev for nearly 4 years and I couldn't be happier with the results!</div>
+    <div class="separator">&nbsp;</div>
+    <div class="brand"><img alt="Slider Box Image" src="https://raw.githubusercontent.com/solodev/slider-boxes/master/images/img-1.png" class="mx-auto"/></div>
+  </div>
+</div>
+<div class="one-slide white">
+  <div class="testimonial w-100 h-100  p-3 text-center">
+    <div class="message text-center text-gray">I have been working with Solodev for nearly 4 years and I couldn't be happier with the results!</div>
+    <div class="separator">&nbsp;</div>
+    <div class="brand"><img alt="Slider Box Image" src="https://raw.githubusercontent.com/solodev/slider-boxes/master/images/img-1.png" class="mx-auto"/></div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $(".testimonial-carousel").slick({
+      infinite: !0,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: !1,
+      arrows:true,
+      prevArrow: $(".testimonial-carousel-controls .prev"),
+      nextArrow: $(".testimonial-carousel-controls .next"),
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  });
+</script>
+</html>

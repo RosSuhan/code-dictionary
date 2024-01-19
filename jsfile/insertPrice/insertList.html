@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Template Literals</h2>
+
+        <p>Template literals allows variables in strings:</p>
+
+        <p id="demo"></p>
+
+        <h2 id="heading"></h2>
+
+        <ul id="tags"></ul>
+
+        <p>Template literals are not supported in Internet Explorer.</p>
+
+        <script>
+            let header = "Heading of the items you want to list";
+            let tags = ["bullet", "points", "of", "all", "your", "products"];
+
+            // for (const x of tags) {
+            //     html += `<li>${x}</li>`;
+            // }
+
+            // document.getElementById("tags").innerHTML = tags;
+            // document.getElementById("heading").innerHTML = header
+
+            let html = `<h2>${header}</h2><ul>`;
+
+            for (const x of tags) {
+            html += `<li>${x}</li>`;
+            }
+
+            html += `</ul>`;
+            document.getElementById("demo").innerHTML = html;
+
+        </script>
+    </body>
+</html>

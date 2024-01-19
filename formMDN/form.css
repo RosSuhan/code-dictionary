@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.formQuantity {
+    line-height: 2rem;
+}

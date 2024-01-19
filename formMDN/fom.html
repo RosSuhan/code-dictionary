@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MDN form</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- <link href="/style/reset.css" rel="stylesheet" /> -->
+        <link href="/formMDN/form.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <form name="addToCart" action="" method="" target="">
+            <!-- name must be unique to each form -->
+            <!-- these attributes control behavior during form submission:
+                action  =   the url that processes the form submission
+                method  =   post    (form data sent as the request body)
+                            get    (form data appended to the action url with a ? separator - this form has no side effect)
+                            dialog  (this form is inside a dialog. )
+                target  (indicates where to display the response after submitting the form)-->
+
+            <!-- <input type="number" required min="1" max="10" pattern="[0-9]+" value="1" class="formQuantity" id="itemquantity"> -->
+
+            <!-- <button type="submit">buy</button> -->
+        </form>
+
+        <form>
+
+            <input type="text">
+            <button onclick="greet()">press me</button>
+            <div id="greeting"></div>
+        </form>
+
+        <script>
+        //    const button = document.querySelector("button")
+            const name = document.forms
+            
+
+           function greet() {
+                // const name = prompt("what is your name?");
+                const greeting = document.querySelector("#greeting")
+                greeting.textContent = `Hello ${name}, nice to see you!`;
+           }
+        </script>
+    </body>
+</html>

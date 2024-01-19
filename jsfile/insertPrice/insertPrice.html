@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            JavaScript Template Literals
+        </h2>
+
+        <p>
+            Template literals allows variables in strings:
+        </p>
+
+        <p id="demo"></p>
+
+        <p>
+            Note! not supported by Internet Explorer.
+        </p>
+
+
+        <script>
+            let price = 100;
+            let vat = 0.15;
+            let total = `Total: ${(price * (1 + vat)).toFixed(2)}`;
+
+            document.getElementById("demo").innerHTML = total;
+        </script>
+    </body>
+</html>

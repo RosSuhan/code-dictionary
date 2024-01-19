@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>
+        Lightbulp
+    </title>
+
+    <!-- Tags for Browser rendering -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- meta images -->
+    <link href="/assets/favicon.ico" type="image/x-icon" />
+
+    <!-- styles -->
+    <link href="/style/reset.css" rel="stylesheet" />
+    <link href="/style/global.css" rel="stylesheet" />
+    <link href="/style/home.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/main.css">
+
+    
+  </head> 
+  <body>
+    <h2>What can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>
+        In this case JavaScript changes teh value of the src attribure of an image.
+    </p>
+
+    <button onclick="lighton()">
+        Turn on the light
+    </button>
+
+    
+    <img src="/jsfile/lightbulb/pic_bulboff.gif" alt="" id="myImage" width="100">
+
+    <button onclick="lightoff()">
+        Turn off the light
+    </button>
+
+    <script>
+        function lighton(){
+            document.getElementById('myImage').src='/jsfile/lightbulb/pic_bulbon.gif';
+            
+        }
+
+        function lightoff(){
+            document.getElementById('myImage').src='/jsfile/lightbulb/pic_bulboff.gif'
+        }
+    </script>
+  </body>
+</html>
