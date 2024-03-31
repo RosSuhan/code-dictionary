@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Testing video as background
+        </title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="/code-dictionary/code-dictionary/video/video.css">
+        <link rel="stylesheet" type="text/css" href="/vb2.0/style/singleProfile.css" />
+    </head>
+    <body style="background-color: grey;">
+        <video src="/vb2.0/backgroundMedia/VBcard background - BF SOCIAL MEDIA 01.mp4" autoplay loop class="video"></video>
+        <div class="contentBlock">
+            <header class="header">
+                <picture class="logoBlock">
+                    <img src="/VB-Card/assets/VB Icon1.png" alt="" width="100" height="100" class="logo">
+                </picture>
+                <h1 class="profileName" style="color: #000;">Janneke Wait</h1>
+                <h2 class="businessName" style="color: #000;">VB Card</h2>
+                <!-- <p class="busShortBio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum ut saepe vero blanditiis, nemo maxime voluptatibus ducimus aperiam, tenetur iusto laboriosam asperiores distinctio eligendi accusantium at totam labore. Officiis..</p> -->
+            </header>
+            <section class="contactInfoBlock">
+                <button class="dropdownButton" id="jannekebtn" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                    <span class="btnContent" style="background-color: #fff; color: #000;">Contact Details</span>
+                </button>
+                <div class="dropdown" id="jannekecContent" style="background-color: #eee;">
+                    <ul class="dropdownList">
+                        <li class="dropdownItem">
+                            <span class="dropdownContent" style="color: #000;"><ion-icon name="person-outline" class="icon"></ion-icon>Janneke Nel</span>
+                        </li>
+                        <li class="dropdownItem">
+                            <a href="tel:{contact_detail:contact_number}" class="dropdownContent" style="color: #000;">
+                                <ion-icon name="call-outline" class="icon"></ion-icon>telephone
+                            </a>
+                        </li>
+                        <li class="dropdownItem">
+                            <a href="mailto:{contact_detail:email}" class="dropdownContent" style="color: #000;">
+                                <ion-icon name="mail-open-outline" class="icon"></ion-icon>email
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="saveButton" id="saveJanneke" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                        <span class="saveBtnContent" style="background-color: #fff; color: #000;">Save To Contact</span>
+                    </button>
+                </div>
+                <script>
+                    // Get the button, and when the user clicks on it, execute myFunction
+                    document.getElementById("jannekebtn").onclick = function() {opendropdownFunction()};
+                    
+                    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                    function opendropdownFunction() {
+                        console.log("button clicked")
+                
+                      document.getElementById("jannekecContent").classList.toggle("opendropdown");
+                    }
+                </script>
+                <hr>
+                <button type="button" class="button" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                    <a href="https://vbcard.mobi" class="btnContent" style="background-color: #fff; color: #000;">
+                        Website
+                    </a>
+                </button>
+                <hr>
+                <button type="button" class="button" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                    <a href="/assets/VBcard Pricelist.pdf" download="pricelist" class="btnContent" style="background-color: #fff; color: #000;">
+                        Pricelist
+                    </a>
+                </button>
+                <hr>
+                <button class="dropdownButton" id="sharebtn" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                    <span class="btnContent" style="background-color: #fff; color: #000;">Share Contact Details</span>
+                </button>
+                <div class="dropdown" id="shareContent" style="background-color: #eee;">
+                    <hr>
+                    <button type="button" class="saveButton" id="saveJanneke" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                        <a href="https://wa.me/?text=Website-https://vbcard.mobi" class="saveBtnContent" style="background-color: #fff; color: #000;">Via Whatsapp</a>
+                    </button>
+                    
+                    <hr>
+                    <button type="button" class="saveButton" id="saveJanneke" style="background: linear-gradient(90deg, #00d6b7, #005d91, #6422ae);">
+                        <a href="mailto:?subject=%20Check%20out%20this%20Virtual%20Business%20Card%20&body=%20Website%20-%20https://vbcard.mobi" class="saveBtnContent" style="background-color: #fff; color: #000;">Via Email</a>
+                    </button>
+                    
+                </div>
+                <script>
+                    // Get the button, and when the user clicks on it, execute myFunction
+                    document.getElementById("sharebtn").onclick = function() {openSharedropdownFunction()};
+                    
+                    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+                    function openSharedropdownFunction() {
+                        console.log("button clicked")
+                
+                      document.getElementById("shareContent").classList.toggle("opendropdown");
+                    }
+                </script>
+            </section>
+    
+            <section class="socialBlock">
+                <a href="https://www.facebook.com/profile.php?id=100090238425921" class="socialLink">
+                    <img src="/vb2.0/assets/Facebook Icon.png" alt="facebook" width="45px" height="45px">
+                </a>
+    
+                <a href="https://www.instagram.com/vbcard.mobile/" class="social">
+                    <img src="/vb2.0/assets/Instagram Icon.png" alt="instagram" width="45px" height="45px">
+                </a>
+    
+                <a href="https://api.whatsapp.com/send?phone=+27714735834" class="social">
+                    <img src="/vb2.0/assets/Whatsapp Icon.png" alt="whatsapp" width="45px" height="45px">
+                </a>        
+            </section>
+    
+            <footer class="footer" style="color: #fff;">
+                Powered by <img src="/vb2.0/assets/VB Logo on BLACK.png" alt="" height="20" width="auto" class="footerLogo">
+            </footer>
+        </div>
+    </body>
+</html>
