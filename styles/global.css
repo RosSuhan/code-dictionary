@@ -1,0 +1,51 @@
+/* Fonts code to be added here */
+:root {
+    --white: #f6f6f6;
+    --grey: #6c6c6a;
+    --red: #be2623;
+    --charcoal: #000000;
+    --lightcharcoal: #484747;
+    --grey: #b5b2b2;
+    --offwhite: #d3d3d3;
+    --darkRed: #670404;
+    --ligthRed: #d64b47;
+    --shadeRedOne: #9d1f1c;
+    --shadeRedTwo: #d7221e;
+    --shadeRedThree: #f5524e;
+    --glass: rgba(120, 5, 3, 0.5);
+    --overlay: rgba(255, 255, 255, 0.565);
+    --toplayer: polygon(0 0, 100% 0, 100% 25%, 0 95%);
+    --backlayer: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+/* End of fonts */
+
+/* Global Code */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100dvw;
+    min-height: 50svh;
+}
